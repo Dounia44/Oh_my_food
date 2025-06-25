@@ -1,0 +1,23 @@
+{
+  "name": "oh_my_food",
+  "version": "1.0.0",
+  "description": "Oh_my_food",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass:assets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dounia44/Oh_my_food.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dounia44/Oh_my_food/issues"
+  },
+  "homepage": "https://github.com/Dounia44/Oh_my_food#readme",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}

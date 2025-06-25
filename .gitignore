@@ -1,0 +1,8 @@
+# Ignorer node_modules (dépendances installées en local)
+node_modules/
+
+# Ignorer les fichiers de compilation Sass
+css/*.map
+
+# Ignorer les fichiers systèmes de Mac
+.DS_Store
