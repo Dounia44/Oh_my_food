@@ -1,0 +1,22 @@
+@use '../partials/variables' as v;
+
+.footer {
+    padding: 22px 25px;
+    background-color: v.$grey-dark;
+    color: v.$white;
+    
+  &__logo {
+    font-family: v.$font-secondary;
+    font-weight: 400;
+    font-size: v.$font-size-md-lg;
+    font-style: italic;
+    margin-bottom: 16px;
+  }
+
+  &__item { 
+    margin-bottom: 7px;
+    font-weight: 400;
+    font-size: v.$font-size-md;
+  }
+  
+}
