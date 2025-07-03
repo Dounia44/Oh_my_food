@@ -1,3 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #FFFFFF;
+  color: #000000;
+  line-height: 1.2;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 63px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+}
+.header__logo {
+  font-family: "Shrikhand", cursive;
+  color: #101010;
+  font-weight: 400;
+  font-style: italic;
+  padding: 14px 89px 13px 89px;
+}
+
+.footer {
+  padding: 22px 25px;
+  background-color: #353535;
+  color: #FFFFFF;
+}
+.footer__logo {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+.footer__item {
+  margin-bottom: 7px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.location-bar {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EAEAEA;
+  padding: 15px;
+  color: #353535;
+  gap: 17px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.location-bar__text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+  text-align: center;
+  padding: 39px 26px 57px 34px;
+}
+.hero__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 35px 11px 10px;
+}
+.hero__subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0 0 30px 0px;
+}
+.hero__button {
+  padding: 14px 23px 17px 22px;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #FF79DA 0%, #9356DC 100%);
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding: 47px 20px;
+}
+.fonctionnement__title {
+  margin-bottom: 26px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.fonctionnement__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.fonctionnement__step {
+  display: flex;
+  align-items: center;
+}
+.fonctionnement__number {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background-color: #9356DC;
+  color: #FFFFFF;
+  border-radius: 50%;
+  margin-right: -12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+}
+.fonctionnement__content {
+  display: flex;
+  width: 100%;
+  border-radius: 20px;
+  gap: 26px;
+  background-color: #F6F6F6;
+  padding: 28px 34px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  position: relative;
+}
+.fonctionnement__icon {
+  color: #7E7E7E;
+  font-size: 19px;
+}
+.fonctionnement__description {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+  padding: 54px 20px;
+}
+.restaurants__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.restaurants-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background-color: #F6F6F6;
+  border-radius: 15px;
+}
+.restaurants .restaurant-card {
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.restaurants .restaurant-card__image {
+  width: 100%;
+  height: 174px;
+  object-fit: cover;
+  object-position: center 100%;
+}
+.restaurants .restaurant-card__badge {
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  right: 12px;
+  padding: 6px 14px;
+  color: #008766;
+  background-color: #99E2D0;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+}
+.restaurants .restaurant-card__content {
+  position: relative;
+  margin: 16px 25px 16px 13px;
+}
+.restaurants .restaurant-card__name {
+  font-size: 18px;
+  font-weight: 700;
+}
+.restaurants .restaurant-card__location {
+  font-size: 17px;
+  font-weight: 300;
+}
+.restaurants .restaurant-card__like {
+  position: absolute;
+  z-index: 1;
+  top: 196px;
+  right: 12px;
+  border: none;
+  color: #101010;
+  font-size: 26px;
+  background-color: #FFFFFF;
+}
 
 /*# sourceMappingURL=style.css.map */
