@@ -40,7 +40,6 @@ img {
   font-family: "Shrikhand", cursive;
   color: #101010;
   font-weight: 400;
-  font-style: italic;
   padding: 14px 89px 13px 89px;
 }
 
@@ -48,18 +47,27 @@ img {
   padding: 22px 25px;
   background-color: #353535;
   color: #FFFFFF;
+  font-weight: 400;
 }
 .footer__logo {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
   font-size: 18px;
-  font-style: italic;
   margin-bottom: 16px;
 }
 .footer__item {
   margin-bottom: 7px;
-  font-weight: 400;
   font-size: 16px;
+}
+.footer span {
+  font-weight: 500;
+}
+.footer__icon {
+  margin-right: 4px;
+  font-size: 12px;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
 }
 
 .location-bar {
@@ -163,7 +171,7 @@ img {
 
 .restaurants {
   background-color: #F6F6F6;
-  padding: 54px 20px;
+  padding: 54px 20px 66px 20px;
 }
 .restaurants__title {
   font-size: 24px;
@@ -207,6 +215,7 @@ img {
   margin: 16px 25px 16px 13px;
 }
 .restaurants .restaurant-card__name {
+  margin-bottom: 2px;
   font-size: 18px;
   font-weight: 700;
 }
