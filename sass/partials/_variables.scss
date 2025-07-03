@@ -1,0 +1,55 @@
+//Couleurs neutres (Fonds et textes principaux)
+$white: #FFFFFF;                                       //Header colores
+
+$black: #101010;                                     //Logo 
+$black-dark: #000000;                               //<p>, <h3> dans restaurants section 
+
+//Couleurs bleus
+$blue-dark: #003A68;
+$blue:#89C8FA;
+
+//Couleurs vertes
+$green-light: #99E2D0;                      //Badge "nouveau"
+$green: #008766;                           //Text "Nouveau"
+
+//Couleurs rose / Violet (boutons dégradés)
+$pink: #FF79DA;                         //Dégradé bouton
+$purple: #9356DC;                      //Dégradé bouton
+
+//Couleurs gris
+$grey-lightest: #F6F6F6;            //Backround
+$grey-light: #EAEAEA;              //Backround lacation-bar
+$grey: #7E7E7E;                   //Bouton mobile-sreen
+$grey-dark: #353535;             //Vector et backround footer
+
+//Polices
+$font-primary: 'Roboto' , sans-serif;
+$font-secondary: 'Shrikhand', cursive;
+
+//Tailles de polices
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-md-lg: 18px;  // ajoutée
+$font-size-lg: 20px;
+$font-size-xl-md: 24px;  // ajoutée
+$font-size-xl: 30px;
+
+//Espacements (Marges, padding et gaps)
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+
+//Bordures (épaisseurs)
+$border-md: 2px;
+$border-lg: 4px;
+
+//Radius
+$radius-sm: 8px;
+$radius-md: 16px;
+$radius-lg: 20px;
+$radius-xl: 25px;
+
+
