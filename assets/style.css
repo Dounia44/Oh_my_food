@@ -122,7 +122,7 @@ img {
 .fonctionnement {
   display: flex;
   flex-direction: column;
-  padding: 47px 20px;
+  padding: 48px 20px;
 }
 .fonctionnement__title {
   margin-bottom: 1.625rem;
@@ -133,6 +133,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 .fonctionnement__step {
   display: flex;
@@ -175,7 +176,7 @@ img {
 
 .restaurants {
   background-color: #F6F6F6;
-  padding: 54px 20px 66px 20px;
+  padding: 54px 20px;
 }
 .restaurants__title {
   font-size: 1.5rem;
@@ -188,6 +189,7 @@ img {
   gap: 1.125rem;
   background-color: #F6F6F6;
   border-radius: 0.9375rem;
+  margin-bottom: 0.75rem;
 }
 .restaurants .restaurant-card {
   position: relative;

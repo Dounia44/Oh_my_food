@@ -54,7 +54,7 @@
 .fonctionnement{
     display: flex;
     flex-direction: column;
-    padding: 47px 20px;
+    padding: 48px 20px;
     
     &__title{
         margin-bottom: v.$size-26;
@@ -66,6 +66,7 @@
         display: flex;
         flex-direction: column;
         gap: v.$size-24; 
+        margin-bottom: v.$size-20;
     }
 
     &__step{
@@ -114,7 +115,7 @@
 
 .restaurants{
     background-color: v.$color-grey-lightest;
-    padding: 54px 20px 66px 20px;
+    padding: 54px 20px;
     
     &__title{
         font-size: v.$size-24;
@@ -128,6 +129,7 @@
         gap: v.$size-18;
         background-color: v.$color-grey-lightest;
         border-radius: v.$size-15;
+        margin-bottom: v.$size-12;
     }
         .restaurant-card {
             position: relative;
