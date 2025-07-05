@@ -8,14 +8,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: v.$grey-light;
-    padding: 15px;
-    color: v.$grey-dark;
-    gap: 17px;
+    background-color: v.$color-grey-light;
+    padding: v.$size-15;
+    color: v.$color-grey-dark;
+    gap: v.$size-17;
     box-shadow: 0px 4px 4px 0px #00000040;
 
     &__text{
-        font-size: v.$font-size-md;
+        font-size: v.$size-16;
         font-weight: 500;
     }
 }
@@ -25,28 +25,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: v.$grey-lightest;
+    background-color: v.$color-grey-lightest;
     text-align: center;
     padding: 39px 26px 57px 34px;
 
     &__title {
-        font-size: v.$font-size-xl-md;
+        font-size: v.$size-24;
         font-weight: 700;
         margin: 0 35px 11px 10px;  
     }
 
     &__subtitle {
-        font-size: v.$font-size-md-lg;
+        font-size: v.$size-18;
         font-weight: 300;
         margin: 0 0 30px 0px;  
     }
 
     &__button{
         padding: 14px 23px 17px 22px;
-        border-radius: v.$radius-xl;
+        border-radius: v.$size-25;
         background: linear-gradient(90deg, #FF79DA 0%, #9356DC 100%);
-        color: v.$white;
-        font-size: v.$font-size-md;
+        color: v.$color-white;
+        font-size: v.$size-16;
         font-weight: 500; 
     }
 }
@@ -57,15 +57,15 @@
     padding: 47px 20px;
     
     &__title{
-        margin-bottom: 26px;
-        font-size: v.$font-size-xl-md;
+        margin-bottom: v.$size-26;
+        font-size: v.$size-24;
         font-weight: 700;
     }
 
     &__steps{
         display: flex;
         flex-direction: column;
-        gap: 24px; 
+        gap: v.$size-24; 
     }
 
     &__step{
@@ -79,13 +79,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 24px;
-        height: 24px;
-        background-color: v.$purple;
-        color: v.$white;
+        width: v.$size-24;
+        height: v.$size-24;
+        background-color: v.$color-purple;
+        color: v.$color-white;
         border-radius: 50%;
         margin-right: -12px;
-        font-size: 14px;
+        font-size: v.$size-14;
         font-weight: 500;
         line-height: 1;
     }
@@ -93,46 +93,46 @@
     &__content {
         display: flex;
         width: 100%;
-        border-radius: v.$radius-lg;
-        gap: 26px;
-        background-color: v.$grey-lightest;
+        border-radius: v.$size-20;
+        gap: v.$size-26;
+        background-color: v.$color-grey-lightest;
         padding: 28px 34px;
         box-shadow: 0px 4px 15px 0px #00000026;
         position: relative;
     }
 
     &__icon{
-        color: v.$grey;
-        font-size: 19px;
+        color: v.$color-grey;
+        font-size: v.$size-19;
     
     }
     &__description{
-        font-size: v.$font-size-md;
+        font-size: v.$size-16;
         font-weight: 500;
     }
 }   
 
 .restaurants{
-    background-color: v.$grey-lightest;
+    background-color: v.$color-grey-lightest;
     padding: 54px 20px 66px 20px;
     
     &__title{
-        font-size: v.$font-size-xl-md;
+        font-size: v.$size-24;
         font-weight: 700;
-        margin-bottom: 18px;
+        margin-bottom: v.$size-18;
     }
 
     &-cards{
         display: flex;
         flex-direction: column;
-        gap: 18px;
-        background-color: v.$grey-lightest;
-        border-radius: 15px;
+        gap: v.$size-18;
+        background-color: v.$color-grey-lightest;
+        border-radius: v.$size-15;
     }
         .restaurant-card {
             position: relative;
-            background-color: v.$white;
-            border-radius: 15px;
+            background-color: v.$color-white;
+            border-radius: v.$size-15;
             overflow: hidden;
             
 
@@ -146,14 +146,14 @@
         &__badge {
             position: absolute;
             z-index: 1;
-            top: 12px;
-            right: 12px;
+            top: v.$size-12;
+            right: v.$size-12;
             padding: 6px 14px;
-            color: v.$green;
-            background-color: v.$green-light;
-            font-size: v.$font-size-sm; 
+            color: v.$color-green-dark;
+            background-color: v.$color-green;
+            font-size: v.$size-14; 
             font-weight: 500;
-            border-radius: 2px; 
+            border-radius: v.$size-2; 
             box-shadow: 0px 2px 4px 0px #00000026;      
         }
 
@@ -163,13 +163,13 @@
         }
 
         &__name{
-            margin-bottom: 2px;
-            font-size: v.$font-size-md-lg;
+            margin-bottom: v.$size-2;
+            font-size: v.$size-18;
             font-weight: 700;
         }
             
         &__location{
-            font-size: 17px;
+            font-size: v.$size-17;
             font-weight: 300;
         }
 
@@ -177,11 +177,11 @@
             position: absolute;
             z-index: 1;
             top: 196px;
-            right: 12px;
+            right: v.$size-12;
             border: none;
-            color: v.$black;
-            font-size: 26px;
-            background-color: v.$white; 
+            color: v.$color-black;
+            font-size: v.$size-26;
+            background-color: v.$color-white; 
             
         }
     }

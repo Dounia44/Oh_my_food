@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #FFFFFF;
@@ -52,22 +56,22 @@ img {
 .footer__logo {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
-  font-size: 18px;
-  margin-bottom: 16px;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
 }
 .footer__item {
-  margin-bottom: 7px;
-  font-size: 16px;
+  margin-bottom: 0.4375rem;
+  font-size: 1rem;
 }
 .footer span {
   font-weight: 500;
 }
 .footer__icon {
-  margin-right: 4px;
-  font-size: 12px;
-  width: 16px;
-  height: 16px;
-  line-height: 16px;
+  margin-right: 0.25rem;
+  font-size: 0.75rem;
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
 }
 
 .location-bar {
@@ -77,13 +81,13 @@ img {
   align-items: center;
   justify-content: center;
   background-color: #EAEAEA;
-  padding: 15px;
+  padding: 0.9375rem;
   color: #353535;
-  gap: 17px;
+  gap: 1.0625rem;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
 .location-bar__text {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -97,21 +101,21 @@ img {
   padding: 39px 26px 57px 34px;
 }
 .hero__title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   margin: 0 35px 11px 10px;
 }
 .hero__subtitle {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
   margin: 0 0 30px 0px;
 }
 .hero__button {
   padding: 14px 23px 17px 22px;
-  border-radius: 25px;
+  border-radius: 1.5625rem;
   background: linear-gradient(90deg, #FF79DA 0%, #9356DC 100%);
   color: #FFFFFF;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -121,14 +125,14 @@ img {
   padding: 47px 20px;
 }
 .fonctionnement__title {
-  margin-bottom: 26px;
-  font-size: 24px;
+  margin-bottom: 1.625rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 .fonctionnement__steps {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
 }
 .fonctionnement__step {
   display: flex;
@@ -140,21 +144,21 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   background-color: #9356DC;
   color: #FFFFFF;
   border-radius: 50%;
   margin-right: -12px;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   line-height: 1;
 }
 .fonctionnement__content {
   display: flex;
   width: 100%;
-  border-radius: 20px;
-  gap: 26px;
+  border-radius: 1.25rem;
+  gap: 1.625rem;
   background-color: #F6F6F6;
   padding: 28px 34px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
@@ -162,10 +166,10 @@ img {
 }
 .fonctionnement__icon {
   color: #7E7E7E;
-  font-size: 19px;
+  font-size: 1.1875rem;
 }
 .fonctionnement__description {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -174,21 +178,21 @@ img {
   padding: 54px 20px 66px 20px;
 }
 .restaurants__title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
 }
 .restaurants-cards {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 1.125rem;
   background-color: #F6F6F6;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
 }
 .restaurants .restaurant-card {
   position: relative;
   background-color: #FFFFFF;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   overflow: hidden;
 }
 .restaurants .restaurant-card__image {
@@ -200,14 +204,14 @@ img {
 .restaurants .restaurant-card__badge {
   position: absolute;
   z-index: 1;
-  top: 12px;
-  right: 12px;
+  top: 0.75rem;
+  right: 0.75rem;
   padding: 6px 14px;
   color: #008766;
   background-color: #99E2D0;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
-  border-radius: 2px;
+  border-radius: 0.125rem;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
 }
 .restaurants .restaurant-card__content {
@@ -215,22 +219,22 @@ img {
   margin: 16px 25px 16px 13px;
 }
 .restaurants .restaurant-card__name {
-  margin-bottom: 2px;
-  font-size: 18px;
+  margin-bottom: 0.125rem;
+  font-size: 1.125rem;
   font-weight: 700;
 }
 .restaurants .restaurant-card__location {
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 300;
 }
 .restaurants .restaurant-card__like {
   position: absolute;
   z-index: 1;
   top: 196px;
-  right: 12px;
+  right: 0.75rem;
   border: none;
   color: #101010;
-  font-size: 26px;
+  font-size: 1.625rem;
   background-color: #FFFFFF;
 }
 

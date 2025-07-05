@@ -5,10 +5,14 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 100%;
+}
+
 body{
     font-family: v.$font-primary;
-    background-color: v.$white;
-    color: v.$black-dark;
+    background-color: v.$color-white;
+    color: v.$color-black-dark;
     line-height: 1.2;
 }
 
