@@ -44,7 +44,7 @@
     &__button{
         padding: 14px 23px 17px 22px;
         border-radius: v.$size-25;
-        background: linear-gradient(90deg, #FF79DA 0%, #9356DC 100%);
+        background: linear-gradient(358deg, #9356DC  -11.44%, #FF79DA 123,93%);
         color: v.$color-white;
         font-size: v.$size-16;
         font-weight: 500; 
@@ -164,27 +164,29 @@
             margin: 16px 25px 16px 13px; 
         }
 
-        &__name{
+        &__name {
             margin-bottom: v.$size-2;
             font-size: v.$size-18;
             font-weight: 700;
         }
             
-        &__location{
+        &__location {
             font-size: v.$size-17;
             font-weight: 300;
         }
 
         &__like {
-            position: absolute;
-            z-index: 1;
-            top: 196px;
-            right: v.$size-12;
+            background: none;
             border: none;
-            color: v.$color-black;
-            font-size: v.$size-26;
-            background-color: v.$color-white; 
-            
+            padding: 0;
+            position: absolute;
+            top: 196px;
+            right: v.$size-25;   
+        }
+        &__like-icon {
+            width: v.$size-22;
+            height: v.$size-21;
+            object-fit: contain;
         }
     }
 } 
