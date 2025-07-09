@@ -1,0 +1,36 @@
+@use '../partials/variables' as v;
+@use 'sass:color';   
+   
+.button {
+  position: relative;
+  padding: v.$size-14 v.$size-23 v.$size-17 v.$size-22;
+  border-radius: v.$size-25;
+  background: linear-gradient(358deg, v.$color-purple -11.44%, v.$color-pink 123.93%);
+  margin-bottom: 20px;
+  color: v.$color-white;
+  font-size: v.$size-16;
+  font-weight: 400;
+  box-shadow: 0px 4px 10px 0px rgba(v.$color-black-dark, 0.25);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  user-select: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(v.$color-white, 0);
+    border-radius: inherit;
+    pointer-events: none;
+    transition: background 0.3s ease;
+  }
+
+  &:hover {
+    box-shadow: 0px 4px 15px 0px rgba(v.$color-black-dark, 0.35);
+
+    &::after {
+      background: rgba(v.$color-white, 0.15);
+    }
+  }
+}
