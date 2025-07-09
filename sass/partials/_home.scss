@@ -175,18 +175,5 @@
             font-weight: 300;
         }
 
-        &__like {
-            background: none;
-            border: none;
-            padding: 0;
-            position: absolute;
-            top: 196px;
-            right: v.$size-25;   
-        }
-        &__like-icon {
-            width: v.$size-22;
-            height: v.$size-21;
-            object-fit: contain;
-        }
     }
 } 
