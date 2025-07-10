@@ -1,34 +1,72 @@
 @use '../partials/variables' as v;
+@use '../partials/mixins' as m;
 
 .footer {
     padding: v.$size-22 v.$size-25;
     background-color: v.$color-grey-dark;     /* Background & colors */
     color: v.$color-white;
-    font-weight: 400;       /* Background & colors */
-    
-    
-  &__logo {
-    font-family: v.$font-secondary;   /* Typography */
     font-weight: 400;
-    font-size: v.$size-18;
-    margin-bottom: v.$size-16;        /* Spacing */
-  }
+    
+    @include m.desktop {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 30px 68px;
+        height: 114px;
+    }
 
-  &__item { 
-    margin-bottom: v.$size-7;
-    font-size: v.$size-16;
-  }
+    @include m.desktop {
+        &__nav-group {
+            order: 1;
+            display: flex;
+            gap: 44px;
+        }
+    }
+
+    &__logo {
+        font-family: v.$font-secondary;   /* Typography */
+        font-weight: 400;
+        font-size: v.$size-18;
+        margin-bottom: v.$size-16;        /* Spacing */
+
+        @include m.desktop {
+            order: 2;
+            margin-bottom: 0;
+            margin-left: 90px;
+        }
+    }
+
+    @include m.desktop {
+        &__items{
+            display: flex;
+            gap: 16px;
+        }
+    }
+
+    &__item { 
+        margin-bottom: v.$size-7;
+        font-size: v.$size-16;
+
+        @include m.desktop {
+            margin-bottom: 0;
+        }
+    }
 
     span{
-      font-weight: 500;
+        font-weight: 500;
     }
 
     &__icon {
-      width: v.$size-16;
-      height: v.$size-16;
-      margin-right: v.$size-4;
-      font-size: v.$size-12;
-      line-height: v.$size-16;
+        width: v.$size-16;
+        height: v.$size-16;
+        margin-right: v.$size-4;
+        font-size: v.$size-12;
+        line-height: v.$size-16;
+
+        @include m.desktop {
+            margin-right: 2px;
+        }
+
     }
   
 }

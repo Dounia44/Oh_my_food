@@ -1,4 +1,5 @@
 @use '../partials/variables' as v;
+@use '../partials/mixins' as m;
 
 
 .header{
@@ -17,6 +18,11 @@
         font-weight: 400;
         color: v.$color-black;
         padding: 14px 89px 13px 89px;
+    }
+
+    @include m.desktop {
+        height: 96px;
+        box-shadow: none;
     }
 }
 

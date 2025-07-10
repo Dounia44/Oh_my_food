@@ -1,6 +1,6 @@
 
 @use '../partials/variables' as v;
-
+@use '../partials/mixins' as m;
 
 .location-bar{
     position: relative;
@@ -14,11 +14,16 @@
     gap: v.$size-17;
     box-shadow: 0px 4px 4px 0px #00000040;
 
+    @include m.desktop {
+       box-shadow: none;
+    }
+
     &__text{
         font-size: v.$size-16;
         font-weight: 500;
     }
 }
+
 
 .hero{
     display: flex;
@@ -29,30 +34,49 @@
     text-align: center;
     padding: 38px 32px;
 
+    @include m.desktop {
+       padding: 30px 32px;
+    }
+
     &__title {
         font-size: v.$size-24;
         font-weight: 700;
         margin: 0px 24px 12px 24px;  
+
+        @include m.desktop {
+        font-size: v.$size-40;
+        margin-bottom: v.$size-18;
+        }
     }
 
     &__subtitle {
         font-size: v.$size-18;
         font-weight: 300;
         margin-bottom: 30px;  
+
+        @include m.desktop {
+        margin-bottom: 30px;
+        }
     }
-
-
 }
 
 .fonctionnement{
     display: flex;
     flex-direction: column;
     padding: 48px 20px;
+
+    @include m.desktop {
+    padding: 50px 207px 50px 180px;
+    }
     
     &__title{
         margin-bottom: v.$size-26;
         font-size: v.$size-24;
         font-weight: 700;
+
+        @include m.desktop {
+        margin-bottom: v.$size-25;
+        }
     }
 
     &__steps{
@@ -60,11 +84,20 @@
         flex-direction: column;
         gap: v.$size-24; 
         margin-bottom: v.$size-20;
+
+        @include m.desktop {
+        flex-direction: row;
+        margin-bottom: 0;
+        }
     }
 
     &__step{
         display: flex;
         align-items: center;  
+
+        @include m.desktop {
+        flex: 1;
+        }
     }
 
     &__number{
@@ -109,11 +142,19 @@
 .restaurants{
     background-color: v.$color-grey-lightest;
     padding: 54px 20px;
+
+    @include m.desktop {
+        padding: 30px 180px;
+    }
     
     &__title{
         font-size: v.$size-24;
         font-weight: 700;
         margin-bottom: v.$size-18;
+
+        @include m.desktop {
+        margin-bottom: v.$size-28;
+        }
     }
 
     &-cards{
@@ -123,19 +164,38 @@
         background-color: v.$color-grey-lightest;
         border-radius: v.$size-15;
         margin-bottom: v.$size-12;
+
+        @include m.desktop {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 50px 100px;
+            margin-bottom: 0;
+
+        }
     }
         .restaurant-card {
             position: relative;
             background-color: v.$color-white;
             border-radius: v.$size-15;
             overflow: hidden;
+
+            @include m.desktop {
+                flex-grow: 1;                   // Peut s'agrandir
+                flex-shrink: 1;                 // Peut rétrécir
+                flex-basis: calc(50% - 50px);   // de base 50% moins le gap
+            }   
             
 
         &__image {   
+            display: block;
             width: 100%;
             height: 174px;
             object-fit: cover;
             object-position: center 100%;      
+            
+            @include m.desktop {
+                object-position: center 65%;
+            }
         }
 
         &__badge {
