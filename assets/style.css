@@ -4,7 +4,7 @@
   margin-bottom: 1.25rem;
   border-radius: 1.5625rem;
   font-size: 1rem; /*Typography*/
-  font-weight: 400;
+  font-weight: 500;
   color: #FFFFFF;
   background: linear-gradient(358deg, #9356DC -11.44%, #FF79DA 123.93%); /* Background & effects */
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
@@ -314,6 +314,9 @@ img {
 .fonctionnement__icon {
   color: #7E7E7E;
   font-size: 1.1875rem;
+}
+.fonctionnement__icon--purple {
+  color: #9356DC;
 }
 .fonctionnement__description {
   font-size: 1rem;
