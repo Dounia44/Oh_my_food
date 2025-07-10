@@ -2,20 +2,20 @@
 
 
 .header{
-    position: relative;
+    position: relative;         /* Positioning */
     z-index: 20;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 63px;
-    background-color: v.$color-white;
+    background-color: v.$color-white;           /* Background & effects */
     box-shadow: 0px 2px 4px 0px #00000026;
 
     
     &__logo{
         font-family: v.$font-secondary;
-        color: v.$color-black;
         font-weight: 400;
+        color: v.$color-black;
         padding: 14px 89px 13px 89px;
     }
 }

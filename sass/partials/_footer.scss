@@ -1,17 +1,17 @@
 @use '../partials/variables' as v;
 
 .footer {
-    padding: 22px 25px;
-    background-color: v.$color-grey-dark;
+    padding: v.$size-22 v.$size-25;
+    background-color: v.$color-grey-dark;     /* Background & colors */
     color: v.$color-white;
-    font-weight: 400;
+    font-weight: 400;       /* Background & colors */
     
     
   &__logo {
-    font-family: v.$font-secondary;
+    font-family: v.$font-secondary;   /* Typography */
     font-weight: 400;
     font-size: v.$size-18;
-    margin-bottom: v.$size-16;
+    margin-bottom: v.$size-16;        /* Spacing */
   }
 
   &__item { 
@@ -24,10 +24,10 @@
     }
 
     &__icon {
-      margin-right: v.$size-4;
-      font-size: v.$size-12;
       width: v.$size-16;
       height: v.$size-16;
+      margin-right: v.$size-4;
+      font-size: v.$size-12;
       line-height: v.$size-16;
     }
   
