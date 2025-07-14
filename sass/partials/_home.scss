@@ -58,6 +58,13 @@
         margin-bottom: 30px;
         }
     }
+    
+    .button {
+        margin-bottom: v.$size-20;
+        @include m.desktop {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .fonctionnement{
