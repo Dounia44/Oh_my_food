@@ -111,10 +111,14 @@ img {
 }
 .header__go-back {
   position: absolute;
-  left: 17px;
-  color: #101010;
-  font-size: 1.625rem;
+  display: inline-block;
+  left: 16px;
+  transform: translateY(-50%);
   text-decoration: none;
+}
+.header__go-back img {
+  width: 26px;
+  height: 26px;
 }
 .header__logo {
   font-family: "Shrikhand", cursive;
