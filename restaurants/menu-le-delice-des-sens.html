@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La palette du goût</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="../index.html">
+            <img src="../assets/images/icons/go-back.svg" alt="Retour en arrière" class="header__go-back">
+        </a>
+        <span class="header__logo">ohmyfood</span>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="banniere">
+            <img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Une assiette gastronomique dressée avec soin sur une table festive." class="banniere__image">
+        </div>
+        <section class="menu">
+            <div class="menu__bloc">
+                <h1 class="menu__title">Le délice des sens</h1>
+                <button class="like">
+                    <img src="../assets/images/icons/like.svg" alt="Like" class="like-icon">
+                    <img src="../assets/images/icons/like-full.svg" alt="Like" class="like-full">
+                </button> 
+            </div>   
+            <!-- ENTRÉES -->
+            <div class="menu__category">
+                <h2 class="menu__subtitle">ENTRÉES</h2>
+                <div class="menu__separator"></div>
+
+                <ul class="menu__cards">
+                    <li class="menu__card delay-1">
+                        <div class="menu__card-text">
+                            <p class="menu__card-title">Tartare de thon</p>
+                            <p class="menu__card-desc">Assaisonné au yuzu</p>
+                        </div>
+                        <p class="menu__card-price">25€</p> 
+                        <div class="menu__card-check">
+                            <i class="fa-solid fa-check"></i>
+                        </div>                          
+                    </li>
+
+                    <li class="menu__card delay-2">
+                        <div class="menu__card-text">
+                            <p class="menu__card-title">Bouchée de homard croustillant </p>
+                            <p class="menu__card-desc">Et sa farandole de petits légumes</p>
+                        </div>
+                        <p class="menu__card-price">35€</p>
+                        <div class="menu__card-check">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </li>
+
+                    <li class="menu__card delay-3">
+                        <div class="menu__card-text">
+                            <p class="menu__card-title">Velouté de cèpes</p>
+                            <p class="menu__card-desc">Aux truffes</p>
+                        </div>
+                        <p class="menu__card-price">20€</p>
+                        <div class="menu__card-check">
+                            <i class="fa-solid fa-check"></i>
+                        </div> 
+                    </li>
+                </ul>
+            </div>
+            <!-- PLATS -->
+            <div class="menu__category">
+                <h2 class="menu__subtitle">PLATS</h2>
+                <div class="menu__separator"></div>
+
+                <ul class="menu__cards">
+                    <li class="menu__card delay-1">
+                        <div class="menu__card-text">
+                            <p class="menu__card-title">Poulet rôti aux herbes de Provence</p>
+                            <p class="menu__card-desc">Et sa crème de truffe</p>
+                        </div>
+                        <p class="menu__card-price">40€</p>
+                        <div class="menu__card-check">
+                            <i class="fa-solid fa-check"></i>
+                        </div> 
+                    </li>
+
+                    <li class="menu__card delay-2">
+                        <div class="menu__card-text">
+                            <p class="menu__card-title">Langouste rôtie</p>
+                            <p class="menu__card-desc">Et ses légumes de saison</p>
+                        </div>
+                        <p class="menu__card-price">35€</p>
+                        <div class="menu__card-check">
+                            <i class="fa-solid fa-check"></i>
+                        </div> 
+                    </li>
+                    <li class="menu__card delay-3">
+                        <div class="menu__card-text">
+                            <p class="menu__card-title">Côte de bœuf Angus</p>
+                            <p class="menu__card-desc">Et sa purée de panais</p>
+                        </div>
+                        <p class="menu__card-price">44€</p>
+                        <div class="menu__card-check">
+                            <i class="fa-solid fa-check"></i>
+                        </div> 
+
+                    </li>
+                </ul>
+            </div>
+            <!-- DESSERTS -->
+            <div class="menu__category">
+                <h2 class="menu__subtitle">DESSERTS</h2>
+                <div class="menu__separator"></div>
+
+                <ul class="menu__cards">
+                    <li class="menu__card delay-1">
+                        <div class="menu__card-text">
+                            <p class="menu__card-title">Farandole de desserts</p>
+                            <p class="menu__card-desc">Du chef</p>
+                        </div>
+                        <p class="menu__card-price">18€</p>
+                        <div class="menu__card-check">
+                            <i class="fa-solid fa-check"></i>
+                        </div> 
+                    </li>
+
+                    <li class="menu__card delay-2">
+                        <div class="menu__card-text">
+                            <p class="menu__card-title">Crème brulée</p>
+                            <p class="menu__card-desc">Revisitée</p>
+                        </div>
+                        <p class="menu__card-price">22€</p>
+                        <div class="menu__card-check">
+                            <i class="fa-solid fa-check"></i>
+                        </div> 
+                    </li>
+
+                    <li class="menu__card delay-3">
+                        <div class="menu__card-text">
+                            <p class="menu__card-title">Tiramisu</p>
+                            <p class="menu__card-desc">À la noisette</p>
+                        </div>
+                        <p class="menu__card-price">23€</p>
+                        <div class="menu__card-check">
+                            <i class="fa-solid fa-check"></i>
+                        </div> 
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="button">Commander</a>
+        </section>
+    </main>
+                <!-- footer -->
+    <footer class="footer">
+        <p class="footer__logo">ohmyfood</p>
+        <nav class="footer__nav-group">
+            <ul class="footer__items">
+                <li class="footer__item">
+                    <a href="#">
+                        <i class="fa-solid fa-utensils footer__icon"></i>
+                        <span>Proposer un restaurant</span>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#">
+                        <i class="fa-solid fa-handshake-angle footer__icon"></i>
+                        <span>Devenir partenaire</span>
+                    </a>
+                </li>
+            </ul>
+    
+            <ul class="footer__items">   
+                <li class="footer__item">
+                    <a href="#">Mentions légales</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#">Contact</a>
+                </li>
+            </ul> 
+        </nav>
+    </footer>
+   
+</body>
+</html>
