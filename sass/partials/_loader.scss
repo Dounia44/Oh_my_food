@@ -1,0 +1,52 @@
+@use '../partials/variables' as v;
+.loader {
+    position: fixed;
+    background: v.$color-white;
+    width: 100%;        //prend toute la larrgeur de l'ecran
+    height: 100%;       //prend toute la hauteur de l'ecran
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeOut 1s ease forwards;
+    animation-delay: 0.6s;      //dure 2s, commence après 2s, puis reste invisible (forwards)
+    z-index: 100;
+
+    &__spinner {
+        width: 100px;    //largeur du cercle
+        height: 100px;   //hauteur du cercle
+        border: 15px solid v.$color-purple;
+        border-bottom-color: v.$color-pink;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+    }
+}
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.page > *:not(.loader){
+  opacity: 0;
+  animation: page-fadeIn 0.6s ease forwards;
+  animation-delay: 1.3s;
+}
+
+@keyframes page-fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
