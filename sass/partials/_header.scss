@@ -27,12 +27,14 @@
     }
     
     &__logo{
+        font-size: 28px;
         font-family: v.$font-secondary;
         font-weight: 400;
         color: v.$color-black;
-        margin-top: 12px;
+        margin-top: 11px;
         
         @include m.desktop {
+            font-size: 36px;
             margin-top: 0;
         }
     }

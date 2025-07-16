@@ -57,6 +57,11 @@ height: 275px;
         font-weight: 400;
         font-family: v.$font-secondary;
         color: v.$color-black;
+
+        @include m.desktop {
+            justify-content: center;
+            // margin: 15px 0 44px 0;
+        }
     }
 
     &__subtitle {
