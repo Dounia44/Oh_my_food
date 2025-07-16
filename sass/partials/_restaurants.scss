@@ -16,24 +16,24 @@ height: 275px;
         flex-direction: column;
         position: relative; //positionner l'image
         z-index: 2;         //positionner l'image
-        padding: 35px 13px;
+        padding: 36px 13px;
         background-color: v.$color-grey-lightest;
-        border-radius: 48px 48px 0 0;
+        border-radius: 40px 40px 0 0;
         margin-top: -53px;      //positionner l'image
     
 
     &__title {
         display: flex;
-        margin-bottom: 32px;
-        font-size: 28px;
+        margin-bottom: 30px;
+        font-size: v.$size-28;
         font-weight: 400;
         font-family: v.$font-secondary;
         color: v.$color-black;
     }
 
     &__subtitle {
-        margin-bottom: 4px;
-        font-size: 16px;
+        margin-bottom: 5px;
+        font-size: v.$size-16;
         font-weight: 300;
     }
 

@@ -84,6 +84,10 @@ ul, ol {
   list-style: none;
 }
 
+h1 {
+  font-size: 28px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -116,7 +120,7 @@ img {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
   color: #101010;
-  margin-top: 12px;
+  margin-top: 11px;
 }
 @media screen and (min-width: 1024px) {
   .header__logo {
@@ -131,7 +135,7 @@ img {
 }
 
 .footer {
-  padding: 1.375rem 1.5625rem;
+  padding: 24px 25px 18px 25px;
   background-color: #353535; /* Background & colors */
   color: #FFFFFF;
   font-weight: 400;
@@ -156,7 +160,7 @@ img {
   font-family: "Shrikhand", cursive; /* Typography */
   font-weight: 400;
   font-size: 1.125rem;
-  margin-bottom: 1rem; /* Spacing */
+  margin-bottom: 1.125rem; /* Spacing */
 }
 @media screen and (min-width: 1024px) {
   .footer__logo {
@@ -172,7 +176,7 @@ img {
   }
 }
 .footer__item {
-  margin-bottom: 0.4375rem;
+  margin-bottom: 0.5rem;
   font-size: 1rem;
 }
 @media screen and (min-width: 1024px) {
@@ -416,7 +420,7 @@ img {
 }
 .restaurants .restaurant-card__content {
   position: relative;
-  margin: 16px 25px 16px 13px;
+  margin: 16px 13px;
 }
 .restaurants .restaurant-card__name {
   margin-bottom: 0.125rem;
@@ -442,22 +446,22 @@ img {
   flex-direction: column;
   position: relative;
   z-index: 2;
-  padding: 35px 13px;
+  padding: 36px 13px;
   background-color: #F6F6F6;
-  border-radius: 48px 48px 0 0;
+  border-radius: 40px 40px 0 0;
   margin-top: -53px;
 }
 .menu__title {
   display: flex;
-  margin-bottom: 32px;
-  font-size: 28px;
+  margin-bottom: 30px;
+  font-size: 1.75rem;
   font-weight: 400;
   font-family: "Shrikhand", cursive;
   color: #101010;
 }
 .menu__subtitle {
-  margin-bottom: 4px;
-  font-size: 16px;
+  margin-bottom: 5px;
+  font-size: 1rem;
   font-weight: 300;
 }
 .menu__separator {

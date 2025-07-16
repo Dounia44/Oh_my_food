@@ -2,7 +2,7 @@
 @use '../partials/mixins' as m;
 
 .footer {
-    padding: v.$size-22 v.$size-25;
+    padding: 24px 25px 18px 25px;
     background-color: v.$color-grey-dark;     /* Background & colors */
     color: v.$color-white;
     font-weight: 400;
@@ -23,11 +23,12 @@
         }
     }
 
+
     &__logo {
         font-family: v.$font-secondary;   /* Typography */
         font-weight: 400;
         font-size: v.$size-18;
-        margin-bottom: v.$size-16;        /* Spacing */
+        margin-bottom: v.$size-18;        /* Spacing */
 
         @include m.desktop {
             order: 2;
@@ -44,7 +45,7 @@
     }
 
     &__item { 
-        margin-bottom: v.$size-7;
+        margin-bottom: v.$size-8;
         font-size: v.$size-16;
 
         @include m.desktop {
@@ -66,7 +67,6 @@
         @include m.desktop {
             margin-right: 2px;
         }
-
     }
   
 }
