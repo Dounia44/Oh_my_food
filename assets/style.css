@@ -454,6 +454,33 @@ img {
   background-color: #F6F6F6;
   border-radius: 40px 40px 0 0;
   margin-top: -53px;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    max-width: 1055px;
+    margin-inline: auto;
+    margin-top: -40px;
+    padding: 40px 210px;
+  }
+}
+.menu__bloc {
+  display: flex;
+}
+.menu__bloc .like {
+  top: 40px;
+  right: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .menu__bloc {
+    justify-content: center;
+    align-items: center;
+  }
+  .menu__bloc .like {
+    position: relative;
+    top: 0;
+    left: 26px;
+  }
 }
 .menu__title {
   display: flex;
