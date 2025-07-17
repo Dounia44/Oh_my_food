@@ -89,16 +89,16 @@ height: 275px;
     }
 
         //délai d'apparition 
-    .delay-1 {animation-delay: 0.2s;}
-    .delay-2 {animation-delay: 0.4s;}
-    .delay-3 {animation-delay: 0.6s;}
-    .delay-4 {animation-delay: 0.8s;}
-    .delay-5 {animation-delay: 1s;}
-    .delay-6 {animation-delay: 1.2s;}
-    .delay-7 {animation-delay: 1.4s;}
-    .delay-8 {animation-delay: 1.6s;}
-    .delay-9 {animation-delay: 1.8s;}
-    .delay-10 {animation-delay: 2s;}
+    .delay-1 {animation-delay: 0.1s;}
+    .delay-2 {animation-delay: 0.2s;}
+    .delay-3 {animation-delay: 0.3s;}
+    .delay-4 {animation-delay: 0.4s;}
+    .delay-5 {animation-delay: 0.5s;}
+    .delay-6 {animation-delay: 0.6s;}
+    .delay-7 {animation-delay: 0.7s;}
+    .delay-8 {animation-delay: 0.8s;}
+    .delay-9 {animation-delay: 0.9s;}
+    .delay-10 {animation-delay: 1s;}
 
     &__card {
         overflow: hidden;       //je cache tous ce qui dépasse de la carte 
@@ -111,7 +111,7 @@ height: 275px;
         border-radius: 20px;
         background-color: v.$color-white;
         box-shadow: 0px 4.01px 15.04px 0px #0000001A;
-        animation: cardsReveal 1s ease forwards;
+        animation: cardsReveal 0.6s ease-out forwards;        // la transition dure 1s avec une courbe ease (forwards pour que l'animation revien à son état initial)
 
         &-text {
             display: flex;
