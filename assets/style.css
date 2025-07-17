@@ -580,9 +580,28 @@ img {
 .menu .delay-4 {
   animation-delay: 0.8s;
 }
+.menu .delay-5 {
+  animation-delay: 1s;
+}
+.menu .delay-6 {
+  animation-delay: 1.2s;
+}
+.menu .delay-7 {
+  animation-delay: 1.4s;
+}
+.menu .delay-8 {
+  animation-delay: 1.6s;
+}
+.menu .delay-9 {
+  animation-delay: 1.8s;
+}
+.menu .delay-10 {
+  animation-delay: 2s;
+}
 .menu__card {
   overflow: hidden;
   display: flex;
+  opacity: 0;
   justify-content: space-between;
   align-items: center;
   min-height: 69px;
