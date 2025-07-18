@@ -12,11 +12,11 @@
     z-index: 100;
 
     &__spinner {
-        width: 100px;    //largeur du cercle
-        height: 100px;   //hauteur du cercle
-        border: 15px solid v.$color-purple;
+        width: v.$spinner-width;    //largeur du cercle
+        height: v.$spinner-height;   //hauteur du cercle
+        border: v.$spiner-border solid v.$color-purple;
         border-bottom-color: v.$color-pink;
-        border-radius: 50%;
+        border-radius: v.$circle-radius;
         animation: spin 1s linear infinite;
     }
 }

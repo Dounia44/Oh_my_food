@@ -14,7 +14,7 @@ html{
 body{
     font-family: v.$font-primary;
     background-color: v.$color-white;
-    color: v.$color-black-dark;
+    color: v.$color-black;
     line-height: 1.2;
 }
 
@@ -23,7 +23,8 @@ ul, ol {
 }
 
 h1 {
-    font-size: 28px;
+    font-size: v.$size-28;
+    font-family: v.$font-secondary;
 }
 
 a {

@@ -8,39 +8,37 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 63px;
+    height: v.$header-height;
     background-color: v.$color-white;           /* Background & effects */
-    box-shadow: 0px 2px 4px 0px #00000026;
-
+    box-shadow: v.$header-shadow;
 
     &__go-back{
         position: absolute;
         display: inline-block;
-        left: 16px;
+        left: v.$header-go-back-left;
         transform: translateY(-50%);
         text-decoration: none;
 
         img{
-            width: 26px;
-            height: 26px;
+            width: v.$go-back-width;
+            height: v.$go-back-height;
         }
     }
     
     &__logo{
-        font-size: 28px;
-        font-family: v.$font-secondary;
+        font-size: v.$size-28;
         font-weight: 400;
         color: v.$color-black;
-        margin-top: 11px;
+        margin-top: v.$size-11;
         
         @include m.desktop {
-            font-size: 36px;
+            font-size: v.$size-36;
             margin-top: 0;
         }
     }
 
     @include m.desktop {
-        height: 96px;
+        height: v.$header-height-desktop;
         box-shadow: none;
     }
 }

@@ -2,9 +2,10 @@
 // Colors
 // =========================
 // Neutrals (Fonds et textes principaux)
-$color-white:           #FFFFFF;              
-$color-black:           #101010;              
-$color-black-dark:      #000000;
+$color-white:           #FFFFFF;
+$color-black:           #000000;              
+$color-black-light:     #101010;              
+
 
 // Blues
 $color-blue:            #89C8FA;
@@ -87,3 +88,75 @@ $size-47: 2.9375rem;  // 47px
 $size-48: 3rem;       // 48px
 $size-49: 3.0625rem;  // 49px
 $size-50: 3.125rem;   // 50px
+
+
+// Width / Height
+$menu-card-height-min: 69px;
+$menu-button-width-min: 186px;
+$button-height: 50px;
+$footer-height-desktop: 114px;
+$go-back-height: 26px;
+$go-back-width: 26px;
+$header-height: 63px;
+$header-height-desktop: 96px;
+$restaurant-card-img-height: 174px;
+$like-width: 22px;
+$like-height: 21px;
+$spinner-width: 100px;
+$spinner-height: 100px;
+$banniere-height: 275px;
+$banniere-height-desktop: 383px;
+$menu-separator-width: 40px;
+$menu-separator-height: 3px;
+$fonctionnement-step-width-max: 335px;
+$fonctionnement-number-width: 24px;
+$fonctionnement-number-height: 24px;
+$menu-check-width: 59px;
+$menu-width-max: 1055px;
+
+// Radius
+$menu-card-radius: 20px;
+$button-radius: 25px;
+$fonctionnement-content-radius: 20px;
+$restaurant-card-radius: 15px;
+$restaurant-badge-radius: 2px;
+$menu-radius: 40px 40px 0 0;
+$circle-radius: 50%;
+
+// Box-shadow
+$button-shadow: 0 4px 10px 0 rgba($color-black, 0.25);
+$button-shadow-hover: 0 4px 15px 0 rgba($color-black, 0.35);
+$header-shadow: 0px 2px 4px 0px rgba($color-black, 0.15);
+$location-bar-shadow: 0px 4px 4px 0px rgba($color-black, 0.25);
+$fonctionnement-content-shadow: 0 4px 15px 0 rgba($color-black, 0.15);
+$restaurant-badge-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+$menu-card-shadow:  0 4px 15px 0 rgba($color-black, 0.10);
+
+// Border
+$spiner-border: 15px;
+
+// Margin
+$card-check-margin-right: -59px;
+$step-number-margin-right: -12px;
+$footer-logo-margin-left: 90px;
+$menu-margin-top: -53px;
+$menu-margin-top-desktop: -40px;
+
+// Gap
+$footer-navgroup-gap: 44px;
+$footer-items-gap: 16px;
+$restaurant-cards-gap: 50px 100px;
+$menu-cards-gap: 12px;
+$menu-card-text-gap: 5px;
+
+//
+$header-go-back-left: 16px;
+$like-top: 196px;
+$like-right: 25px;
+$menu-top: 40px;
+$menu-right: 40px;
+$menu-top-desktop: -14px;
+$menu-right-desktop: 26px;
+
+
+

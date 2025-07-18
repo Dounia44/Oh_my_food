@@ -4,11 +4,11 @@
     background: none;
     border: none;
     padding: 0;
-    top: 196px;
-    right: v.$size-25;
+    top: v.$like-top;
+    right: v.$like-right;
     cursor: pointer;
-    width: v.$size-22;
-    height: v.$size-21;
+    width: v.$like-width;
+    height: v.$like-height;
 
     .like-icon,
     .like-full{

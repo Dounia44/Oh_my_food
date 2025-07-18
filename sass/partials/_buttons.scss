@@ -5,14 +5,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
+  height: v.$button-height;
   padding: v.$size-14 v.$size-20;
-  border-radius: v.$size-25;
+  border-radius: v.$button-radius;
   font-size: v.$size-16;
   font-weight: 500;
   color: v.$color-white;
   background: linear-gradient(358deg, v.$color-purple -11.44%, v.$color-pink 123.93%);
-  box-shadow: 0 4px 10px 0 rgba(v.$color-black-dark, 0.25);
+  box-shadow: v.$button-shadow;
   cursor: pointer;
   overflow: hidden;
   user-select: none;
@@ -30,7 +30,7 @@
   }
 
   &:hover {
-    box-shadow: 0 4px 15px 0 rgba(v.$color-black-dark, 0.35);
+    box-shadow: v.$button-shadow-hover;
 
     &::after {
       opacity: 0.15;

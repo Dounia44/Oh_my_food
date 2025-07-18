@@ -2,8 +2,8 @@
 @use '../partials/mixins' as m;
 
 .footer {
-    padding: 24px 25px 18px 25px;
-    background-color: v.$color-grey-dark;     /* Background & colors */
+    padding: v.$size-24 v.$size-25 v.$size-18 v.$size-25;
+    background-color: v.$color-grey-dark;     
     color: v.$color-white;
     font-weight: 400;
     
@@ -11,15 +11,15 @@
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-        padding: 30px 68px;
-        height: 114px;
+        padding: v.$size-30 4.25rem;       //rem: 68px
+        height: v.$footer-height-desktop;
     }
 
     @include m.desktop {
         &__nav-group {
             order: 1;
             display: flex;
-            gap: 44px;
+            gap: v.$footer-navgroup-gap;
         }
     }
 
@@ -33,14 +33,14 @@
         @include m.desktop {
             order: 2;
             margin-bottom: 0;
-            margin-left: 90px;
+            margin-left: v.$footer-logo-margin-left;
         }
     }
 
     @include m.desktop {
         &__items{
             display: flex;
-            gap: 16px;
+            gap: v.$footer-items-gap;
         }
     }
 
@@ -65,7 +65,7 @@
         line-height: v.$size-16;
 
         @include m.desktop {
-            margin-right: 2px;
+            margin-right: v.$size-2;
         }
     }
   

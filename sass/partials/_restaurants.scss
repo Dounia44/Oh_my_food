@@ -1,11 +1,17 @@
 @use '../partials/variables' as v;
 @use '../partials/mixins' as m;
 
+.header{
+    &__logo {
+        font-family: v.$font-secondary;
+    }
+}
+
 .banniere {
-height: 275px;
+height: v.$banniere-height;
 
     @include m.desktop{
-        height: 383px;
+        height: v.$banniere-height-desktop;
     }
 
     &__image {
@@ -18,19 +24,19 @@ height: 275px;
     .menu {
         display: flex;
         flex-direction: column;
-        position: relative; //positionner l'image
-        z-index: 2;         //positionner l'image
-        padding: 36px 13px;
+        position: relative;         //positionner l'image
+        z-index: 2;                 //positionner l'image
+        padding: v.$size-36 v.$size-13;
         background-color: v.$color-grey-lightest;
-        border-radius: 40px 40px 0 0;
-        margin-top: -53px;      //positionner l'image
+        border-radius: v.$menu-radius;
+        margin-top: v.$menu-margin-top;      //positionner l'image
         overflow: hidden;
     
         @include m.desktop {
-            max-width: 1055px;
+            max-width: v.$menu-width-max;
             margin-inline: auto;
-            margin-top: -40px;
-            padding: 40px 210px;
+            margin-top: v.$menu-margin-top-desktop;
+            padding: v.$size-40 13.125rem;      //rem :210px
         }
 
         &__bloc {
@@ -38,8 +44,8 @@ height: 275px;
            // margin: 0p 26px 28px 0;
             
             .like {
-                top: 40px;
-                right: 40px;
+                top: v.$menu-top;
+                right: v.$menu-right;
             }
             
             @include m.desktop {
@@ -48,18 +54,16 @@ height: 275px;
 
                 .like {
                     position: relative;
-                    top: -14px;
-                    left: 26px;                    
+                    top: v.$menu-top-desktop;
+                    left: v.$menu-right-desktop;                    
                 }
             }
         }
 
     &__title {
         display: flex;
-        margin-bottom: 30px;
-        font-size: v.$size-28;
+        margin-bottom: v.$size-30;
         font-weight: 400;
-        font-family: v.$font-secondary;
         color: v.$color-black;
 
         @include m.desktop {
@@ -69,23 +73,23 @@ height: 275px;
     }
 
     &__subtitle {
-        margin-bottom: 5px;
+        margin-bottom: v.$size-5;
         font-size: v.$size-16;
         font-weight: 300;
     }
 
     &__separator {
-        margin-bottom: 12px;
-        width: 40px;
-        height: 3px;
+        margin-bottom: v.$size-12;
+        width: v.$menu-separator-width;
+        height: v.$menu-separator-height;
         background-color: v.$color-green;  
     }
 
     &__cards {
         display: flex;
         flex-direction: column;
-        margin-bottom: 40px;
-        gap: 12px;
+        margin-bottom: v.$size-40;
+        gap: v.$menu-cards-gap;
     }
 
         //délai d'apparition 
@@ -106,19 +110,19 @@ height: 275px;
         opacity: 0; 
         justify-content: space-between;
         align-items: center;
-        min-height: 69px;
+        min-height: v.$menu-card-height-min;
         height: auto;
-        border-radius: 20px;
+        border-radius: v.$menu-card-radius; 
         background-color: v.$color-white;
-        box-shadow: 0px 4.01px 15.04px 0px #0000001A;
+        box-shadow: v.$menu-card-shadow;
         animation: cardsReveal 0.6s ease-out forwards;        // la transition dure 1s avec une courbe ease (forwards pour que l'animation revien à son état initial)
 
         &-text {
             display: flex;
             flex-direction: column;
             flex-grow: 1;
-            margin-left: 15px;
-            gap: 5px;
+            margin-left: v.$size-15;
+            gap: v.$menu-card-text-gap;
             min-width: 0;
 
         }
@@ -144,7 +148,7 @@ height: 275px;
         flex-shrink: 0;
         font-size: v.$size-15;
         font-weight: 700;
-        margin:auto 16px 12px 4px;
+        margin:auto v.$size-16 v.$size-12 v.$size-4;
         }
 
         &-check {
@@ -152,26 +156,25 @@ height: 275px;
             justify-content: center;
             align-items: center;
             align-self: stretch;
-            width: 59px;
+            width: v.$menu-check-width;
             background-color: v.$color-green;
-            margin-right: -59px;
-           
+            margin-right: v.$card-check-margin-right;
             transition: margin-right 0.6s ease;
         }
 
         &:hover &-check {
-            margin-right: 0px;
+            margin-right: 0;
     }
     }
 
 
     .button {
         align-self: center;
-        min-width: 186px;
-        margin-bottom: 4px;
+        min-width: v.$menu-button-width-min;
+        margin-bottom: v.$size-4;
 
         @include m.desktop {
-            margin-bottom: 0px;
+            margin-bottom: 0;
         }
     }
 
