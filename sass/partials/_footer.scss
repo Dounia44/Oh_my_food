@@ -32,16 +32,22 @@
     }
 
     &__nav-group{
-    @include m.desktop{
-        order: 1;
         display: flex;
-        gap: v.$footer-navgroup-gap;
+        flex-direction: column;
+        gap: v.$size-8;
+
+        @include m.desktop{
+            order: 1;
+            display: flex;
+            flex-direction: row;
+            gap: v.$footer-navgroup-gap;
         }
     }  
 
     &__items{
         display: flex;
         flex-direction: column;
+        gap: v.$size-8;
 
         @include m.desktop{
             flex-direction: row;
@@ -50,7 +56,6 @@
     }
 
     &__item { 
-        margin-bottom: v.$size-8;
         font-size: v.$size-16;
 
         @include m.desktop{
