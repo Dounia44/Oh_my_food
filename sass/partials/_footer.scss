@@ -6,30 +6,21 @@
     background-color: v.$color-grey-dark;     
     color: v.$color-white;
     font-weight: 400;
-    
+
     @include m.desktop {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
         padding: v.$size-30 4.25rem;       //rem: 68px
-        height: v.$footer-height-desktop;
+        height: v.$footer-height-desktop;    
     }
-
-    @include m.desktop {
-        &__nav-group {
-            order: 1;
-            display: flex;
-            gap: v.$footer-navgroup-gap;
-        }
-    }
-
-
+    
     &__logo {
-        font-family: v.$font-secondary;   /* Typography */
-        font-weight: 400;
-        font-size: v.$size-18;
-        margin-bottom: v.$size-18;        /* Spacing */
-
+    font-family: v.$font-secondary;   
+    font-weight: 400;
+    font-size: v.$size-18;
+    margin-bottom: v.$size-18;  
+    
         @include m.desktop {
             order: 2;
             margin-bottom: 0;
@@ -37,9 +28,20 @@
         }
     }
 
-    @include m.desktop {
-        &__items{
-            display: flex;
+    &__nav-group{
+    @include m.desktop{
+        order: 1;
+        display: flex;
+        gap: v.$footer-navgroup-gap;
+        }
+    }  
+
+    &__items{
+        display: flex;
+        flex-direction: column;
+
+        @include m.desktop{
+            flex-direction: row;
             gap: v.$footer-items-gap;
         }
     }
@@ -48,13 +50,9 @@
         margin-bottom: v.$size-8;
         font-size: v.$size-16;
 
-        @include m.desktop {
-            margin-bottom: 0;
+        @include m.desktop{
+        margin-bottom: 0;
         }
-    }
-
-    span{
-        font-weight: 500;
     }
 
     &__icon {
@@ -65,8 +63,11 @@
         line-height: v.$size-16;
 
         @include m.desktop {
-            margin-right: v.$size-2;
+        margin-right: v.$size-2;
         }
     }
-  
+
+    span{
+        font-weight: 500;
+    }
 }

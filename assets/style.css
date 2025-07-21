@@ -150,13 +150,13 @@ img {
   }
 }
 .header {
-  position: relative; /* Positioning */
+  position: relative;
   z-index: 20;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 63px;
-  background-color: #FFFFFF; /* Background & effects */
+  background-color: #FFFFFF;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .header__go-back {
@@ -204,18 +204,11 @@ img {
     height: 114px;
   }
 }
-@media screen and (min-width: 1024px) {
-  .footer__nav-group {
-    order: 1;
-    display: flex;
-    gap: 44px;
-  }
-}
 .footer__logo {
-  font-family: "Shrikhand", cursive; /* Typography */
+  font-family: "Shrikhand", cursive;
   font-weight: 400;
   font-size: 1.125rem;
-  margin-bottom: 1.125rem; /* Spacing */
+  margin-bottom: 1.125rem;
 }
 @media screen and (min-width: 1024px) {
   .footer__logo {
@@ -225,8 +218,19 @@ img {
   }
 }
 @media screen and (min-width: 1024px) {
-  .footer__items {
+  .footer__nav-group {
+    order: 1;
     display: flex;
+    gap: 44px;
+  }
+}
+.footer__items {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .footer__items {
+    flex-direction: row;
     gap: 16px;
   }
 }
@@ -239,9 +243,6 @@ img {
     margin-bottom: 0;
   }
 }
-.footer span {
-  font-weight: 500;
-}
 .footer__icon {
   width: 1rem;
   height: 1rem;
@@ -253,6 +254,9 @@ img {
   .footer__icon {
     margin-right: 0.125rem;
   }
+}
+.footer span {
+  font-weight: 500;
 }
 
 .location-bar {
@@ -305,12 +309,7 @@ img {
 .hero__subtitle {
   font-size: 1.125rem;
   font-weight: 300;
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 1024px) {
-  .hero__subtitle {
-    margin-bottom: 30px;
-  }
+  margin-bottom: 1.875rem;
 }
 .hero .button {
   margin-bottom: 1.25rem;
@@ -336,11 +335,6 @@ img {
   font-size: 1.5rem;
   font-weight: 700;
 }
-@media screen and (min-width: 1024px) {
-  .fonctionnement__title {
-    margin-bottom: 1.5625rem;
-  }
-}
 .fonctionnement__steps {
   display: flex;
   flex-direction: column;
@@ -360,6 +354,7 @@ img {
 @media screen and (min-width: 1024px) {
   .fonctionnement__step {
     flex: 1;
+    max-width: 335px;
   }
 }
 .fonctionnement__number {
@@ -419,34 +414,36 @@ img {
     margin-bottom: 1.75rem;
   }
 }
-.restaurants-cards {
+.restaurants__cards {
   display: flex;
   flex-direction: column;
   gap: 1.125rem;
   margin-bottom: 0.75rem;
 }
 @media screen and (min-width: 1024px) {
-  .restaurants-cards {
+  .restaurants__cards {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 50px 100px;
     margin-bottom: 0;
   }
 }
-.restaurants .restaurant-card {
+
+.restaurant-card {
   position: relative;
   background-color: #FFFFFF;
   border-radius: 15px;
   overflow: hidden;
 }
 @media screen and (min-width: 1024px) {
-  .restaurants .restaurant-card {
+  .restaurant-card {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: calc(50% - 50px);
   }
 }
-.restaurants .restaurant-card__image {
+.restaurant-card__image {
   display: block;
   width: 100%;
   height: 174px;
@@ -454,11 +451,11 @@ img {
   object-position: center 100%;
 }
 @media screen and (min-width: 1024px) {
-  .restaurants .restaurant-card__image {
+  .restaurant-card__image {
     object-position: center 65%;
   }
 }
-.restaurants .restaurant-card__badge {
+.restaurant-card__badge {
   position: absolute;
   z-index: 1;
   top: 0.75rem;
@@ -471,16 +468,16 @@ img {
   border-radius: 2px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
-.restaurants .restaurant-card__content {
+.restaurant-card__content {
   position: relative;
   margin: 1rem 0.8125rem;
 }
-.restaurants .restaurant-card__name {
+.restaurant-card__name {
   margin-bottom: 0.125rem;
   font-size: 1.125rem;
   font-weight: 700;
 }
-.restaurants .restaurant-card__location {
+.restaurant-card__location {
   font-size: 1.0625rem;
   font-weight: 300;
 }
@@ -666,11 +663,11 @@ img {
 
 @keyframes cardsReveal {
   from {
-    transform: translatex(-100%);
+    transform: translateX(-100%);
     opacity: 0;
   }
   to {
-    transform: translatex(0%);
+    transform: translateX(0%);
     opacity: 1;
   }
 }

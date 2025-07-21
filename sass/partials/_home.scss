@@ -52,11 +52,7 @@
     &__subtitle {
         font-size: v.$size-18;
         font-weight: 300;
-        margin-bottom: 30px;  
-
-        @include m.desktop {
-        margin-bottom: 30px;
-        }
+        margin-bottom: v.$size-30;
     }
     
     .button {
@@ -80,10 +76,6 @@
         margin-bottom: v.$size-26;
         font-size: v.$size-24;
         font-weight: 700;
-
-        @include m.desktop {
-        margin-bottom: v.$size-25;
-        }
     }
 
     &__steps{
@@ -100,10 +92,11 @@
 
     &__step{
         display: flex;
-        align-items: center;  
-
+        align-items: center;
+         
         @include m.desktop {
         flex: 1;
+        max-width: v.$fonctionnement-step-width-max;
         }
     }
 
@@ -138,7 +131,6 @@
     &__icon{
         color: v.$color-grey;
         font-size: v.$size-19;
-    
     }
 
     &__icon--purple{
@@ -169,76 +161,74 @@
         }
     }
 
-    &-cards{
+    &__cards{
         display: flex;
         flex-direction: column;
         gap: v.$size-18;
-        background-color: v.$color-grey-lightest;
-        border-radius: v.$size-15;
         margin-bottom: v.$size-12;
 
         @include m.desktop {
+            display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             gap: v.$restaurant-cards-gap;
             margin-bottom: 0;
-
         }
     }
-        .restaurant-card {
-            position: relative;
-            background-color: v.$color-white;
-            border-radius: v.$restaurant-card-radius;
-            overflow: hidden;
+}
 
-            @include m.desktop {
-                flex-grow: 1;                   // Peut s'agrandir
-                flex-shrink: 1;                 // Peut rétrécir
-                flex-basis: calc(50% - 50px);   // de base 50% moins le gap
-            }   
-            
+.restaurant-card {
+    position: relative;
+    background-color: v.$color-white;
+    border-radius: v.$restaurant-card-radius;
+    overflow: hidden;
 
-        &__image {
-            display: block;
-            width: 100%;
-            height: v.$restaurant-card-img-height;
-            object-fit: cover;
-            object-position: center 100%;
-            
-            @include m.desktop {
-                object-position: center 65%;
-            }
+    @include m.desktop {
+        flex-grow: 1;                   // Peut s'agrandir
+        flex-shrink: 1;                 // Peut rétrécir
+        flex-basis: calc(50% - 50px);   // de base 50% moins le gap
+    }   
+        
+    &__image {
+        display: block;
+        width: 100%;
+        height: v.$restaurant-card-img-height;
+        object-fit: cover;
+        object-position: center 100%;
+        
+        @include m.desktop {
+            object-position: center 65%;
         }
-
-        &__badge {
-            position: absolute;
-            z-index: 1;
-            top: v.$size-12;
-            right: v.$size-12;
-            padding: v.$size-6 v.$size-14;
-            color: v.$color-green-dark;
-            background-color: v.$color-green;
-            font-size: v.$size-14; 
-            font-weight: 500;
-            border-radius: v.$restaurant-badge-radius; 
-            box-shadow: v.$restaurant-badge-shadow;      
-        }
-
-        &__content {
-            position: relative;  
-            margin: v.$size-16 v.$size-13; 
-        }
-
-        &__name {
-            margin-bottom: v.$size-2;
-            font-size: v.$size-18;
-            font-weight: 700;
-        }
-            
-        &__location {
-            font-size: v.$size-17;
-            font-weight: 300;
-        }
-
     }
-} 
+
+    &__badge {
+        position: absolute;
+        z-index: 1;
+        top: v.$size-12;
+        right: v.$size-12;
+        padding: v.$size-6 v.$size-14;
+        color: v.$color-green-dark;
+        background-color: v.$color-green;
+        font-size: v.$size-14; 
+        font-weight: 500;
+        border-radius: v.$restaurant-badge-radius; 
+        box-shadow: v.$restaurant-badge-shadow;      
+    }
+
+    &__content {
+        position: relative;  
+        margin: v.$size-16 v.$size-13; 
+    }
+
+    &__name {
+        margin-bottom: v.$size-2;
+        font-size: v.$size-18;
+        font-weight: 700;
+    }
+        
+    &__location {
+        font-size: v.$size-17;
+        font-weight: 300;
+    }
+}
+ 

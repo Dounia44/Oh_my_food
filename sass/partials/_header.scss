@@ -3,13 +3,13 @@
 
 
 .header{
-    position: relative;         /* Positioning */
+    position: relative;        
     z-index: 20;
     display: flex;
     align-items: center;
     justify-content: center;
     height: v.$header-height;
-    background-color: v.$color-white;           /* Background & effects */
+    background-color: v.$color-white;           
     box-shadow: v.$header-shadow;
 
     &__go-back{

@@ -8,7 +8,7 @@
 }
 
 .banniere {
-height: v.$banniere-height;
+    height: v.$banniere-height;
 
     @include m.desktop{
         height: v.$banniere-height-desktop;
@@ -19,46 +19,45 @@ height: v.$banniere-height;
         height: 100%;
         object-fit: cover;
     }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: relative;         //positionner l'image
+    z-index: 2;                 //positionner l'image
+    padding: v.$size-36 v.$size-13;
+    background-color: v.$color-grey-lightest;
+    border-radius: v.$menu-radius;
+    margin-top: v.$menu-margin-top;      //positionner l'image
+    overflow: hidden;
+
+    @include m.desktop {
+        max-width: v.$menu-width-max;
+        margin-inline: auto;
+        margin-top: v.$menu-margin-top-desktop;
+        padding: v.$size-40 13.125rem;      //rem :210px
     }
 
-    .menu {
+    &__bloc {
         display: flex;
-        flex-direction: column;
-        position: relative;         //positionner l'image
-        z-index: 2;                 //positionner l'image
-        padding: v.$size-36 v.$size-13;
-        background-color: v.$color-grey-lightest;
-        border-radius: v.$menu-radius;
-        margin-top: v.$menu-margin-top;      //positionner l'image
-        overflow: hidden;
-    
+        
+        .like {
+            top: v.$menu-top;
+            right: v.$menu-right;
+        }
+        
         @include m.desktop {
-            max-width: v.$menu-width-max;
-            margin-inline: auto;
-            margin-top: v.$menu-margin-top-desktop;
-            padding: v.$size-40 13.125rem;      //rem :210px
-        }
+            justify-content: center;
+            align-items: center;
 
-        &__bloc {
-            display: flex;
-           // margin: 0p 26px 28px 0;
-            
             .like {
-                top: v.$menu-top;
-                right: v.$menu-right;
-            }
-            
-            @include m.desktop {
-                justify-content: center;
-                align-items: center;
-
-                .like {
-                    position: relative;
-                    top: v.$menu-top-desktop;
-                    left: v.$menu-right-desktop;                    
-                }
+                position: relative;
+                top: v.$menu-top-desktop;
+                left: v.$menu-right-desktop;                    
             }
         }
+    }
 
     &__title {
         display: flex;
@@ -68,7 +67,6 @@ height: v.$banniere-height;
 
         @include m.desktop {
             justify-content: center;
-            // margin: 15px 0 44px 0;
         }
     }
 
@@ -92,7 +90,7 @@ height: v.$banniere-height;
         gap: v.$menu-cards-gap;
     }
 
-        //délai d'apparition 
+    //délai d'apparition 
     .delay-1 {animation-delay: 0.1s;}
     .delay-2 {animation-delay: 0.2s;}
     .delay-3 {animation-delay: 0.3s;}
@@ -115,8 +113,7 @@ height: v.$banniere-height;
         border-radius: v.$menu-card-radius; 
         background-color: v.$color-white;
         box-shadow: v.$menu-card-shadow;
-        animation: cardsReveal 0.6s ease-out forwards;        // la transition dure 1s avec une courbe ease (forwards pour que l'animation revien à son état initial)
-
+        animation: cardsReveal 0.6s ease-out forwards;      
         &-text {
             display: flex;
             flex-direction: column;
@@ -124,13 +121,12 @@ height: v.$banniere-height;
             margin-left: v.$size-15;
             gap: v.$menu-card-text-gap;
             min-width: 0;
-
         }
         
         &-title {
             overflow: hidden;
             font-size: v.$size-18;
-        font-weight: 500;
+            font-weight: 500;
             white-space: nowrap;
             text-overflow: ellipsis;
         }
@@ -138,7 +134,7 @@ height: v.$banniere-height;
         &-desc {
             overflow: hidden;
             font-size: v.$size-15;
-        font-weight: 300;
+            font-weight: 300;
             white-space: nowrap;
             text-overflow: ellipsis;
         }
@@ -164,10 +160,8 @@ height: v.$banniere-height;
 
         &:hover &-check {
             margin-right: 0;
+        }
     }
-    }
-
-
     .button {
         align-self: center;
         min-width: v.$menu-button-width-min;
@@ -177,17 +171,15 @@ height: v.$banniere-height;
             margin-bottom: 0;
         }
     }
-
 }
 
-    @keyframes cardsReveal {
+@keyframes cardsReveal {
     from {
-        transform: translatex(-100%);
-        opacity: 0;
+        transform: translateX(-100%);       // Départ en dehors de l’écran à gauche
+        opacity: 0;                          // Invisible
     }
     to {
-        transform: translatex(0%);
-        opacity: 1;
+        transform: translateX(0%);          // Arrive à sa position normale
+        opacity: 1;                          // Devient visible
     }
-   
-    }
+}
