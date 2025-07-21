@@ -2,19 +2,22 @@
 @use '../partials/mixins' as m;
 
 .footer {
-    padding: v.$size-24 v.$size-25 v.$size-18 v.$size-25;
-    background-color: v.$color-grey-dark;     
-    color: v.$color-white;
-    font-weight: 400;
+    background-color: v.$color-grey-dark;
 
-    @include m.desktop {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        padding: v.$size-30 4.25rem;       //rem: 68px
-        height: v.$footer-height-desktop;    
-    }
+    &__container {
+        padding: v.$size-24 v.$size-25 v.$size-18 v.$size-25;
+        color: v.$color-white;
+        font-weight: 400;
     
+        @include m.desktop {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding: v.$size-30 4.25rem;       //rem: 68px
+            height: v.$footer-height-desktop;    
+        }
+    }
+
     &__logo {
     font-family: v.$font-secondary;   
     font-weight: 400;

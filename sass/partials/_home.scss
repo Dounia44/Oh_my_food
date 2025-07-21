@@ -64,14 +64,16 @@
 }
 
 .fonctionnement{
-    display: flex;
-    flex-direction: column;
-    padding: v.$size-48 v.$size-20;
-
-    @include m.desktop {
-    padding: v.$size-50 11.25rem v.$size-50 11.25rem;  //rem: 180px
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding: v.$size-48 v.$size-20;
+        
+        @include m.desktop {
+            padding: v.$size-50 11.25rem v.$size-50 11.25rem;  //rem: 180px
+        }
     }
-    
+        
     &__title{
         margin-bottom: v.$size-26;
         font-size: v.$size-24;
@@ -145,12 +147,15 @@
 
 .restaurants{
     background-color: v.$color-grey-lightest;
+
+    &__container {
     padding: 3.375rem v.$size-20;     // rem: 54px
 
-    @include m.desktop {
-        padding: v.$size-30 11.25rem;        //rem :180px
+        @include m.desktop {
+            padding: v.$size-30 11.25rem;        //rem :180px
+        }
     }
-    
+ 
     &__title{
         font-size: v.$size-24;
         font-weight: 700;

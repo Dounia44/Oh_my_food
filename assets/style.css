@@ -100,6 +100,11 @@ img {
   display: block;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .loader {
   position: fixed;
   background: #FFFFFF;
@@ -190,13 +195,15 @@ img {
 }
 
 .footer {
-  padding: 1.5rem 1.5625rem 1.125rem 1.5625rem;
   background-color: #353535;
+}
+.footer__container {
+  padding: 1.5rem 1.5625rem 1.125rem 1.5625rem;
   color: #FFFFFF;
   font-weight: 400;
 }
 @media screen and (min-width: 1024px) {
-  .footer {
+  .footer__container {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -320,13 +327,13 @@ img {
   }
 }
 
-.fonctionnement {
+.fonctionnement__container {
   display: flex;
   flex-direction: column;
   padding: 3rem 1.25rem;
 }
 @media screen and (min-width: 1024px) {
-  .fonctionnement {
+  .fonctionnement__container {
     padding: 3.125rem 11.25rem 3.125rem 11.25rem;
   }
 }
@@ -397,10 +404,12 @@ img {
 
 .restaurants {
   background-color: #F6F6F6;
+}
+.restaurants__container {
   padding: 3.375rem 1.25rem;
 }
 @media screen and (min-width: 1024px) {
-  .restaurants {
+  .restaurants__container {
     padding: 1.875rem 11.25rem;
   }
 }
