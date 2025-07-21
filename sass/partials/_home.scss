@@ -81,25 +81,19 @@
     }
 
     &__steps{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         gap: v.$size-24; 
         margin-bottom: v.$size-20;
 
         @include m.desktop {
-        flex-direction: row;
-        margin-bottom: 0;
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 
     &__step{
         display: flex;
         align-items: center;
-         
-        @include m.desktop {
-        flex: 1;
-        max-width: v.$fonctionnement-step-width-max;
-        }
     }
 
     &__number{
@@ -121,11 +115,12 @@
 
     &__content {
         display: flex;
+        align-items: center;
         width: 100%;
         border-radius: v.$fonctionnement-content-radius;
         gap: v.$size-26;
         background-color: v.$color-grey-lightest;
-        padding: v.$size-28 v.$size-34;
+        padding: v.$size-28 v.$size-20 v.$size-28 v.$size-34;
         box-shadow: v.$fonctionnement-content-shadow;
         position: relative;
     }
