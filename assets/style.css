@@ -357,6 +357,7 @@ img {
 @media screen and (min-width: 1024px) {
   .fonctionnement__steps {
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 0;
   }
 }
 .fonctionnement__step {
@@ -564,6 +565,7 @@ img {
 @media screen and (min-width: 1024px) {
   .menu__title {
     justify-content: center;
+    margin: 1rem 0 2.625rem 0;
   }
 }
 .menu__subtitle {

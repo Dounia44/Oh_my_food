@@ -68,6 +68,8 @@
 
         @include m.desktop {
             justify-content: center;
+             margin: v.$size-16 0 v.$size-42 0;
+
         }
     }
 
