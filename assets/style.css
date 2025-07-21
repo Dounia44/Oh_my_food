@@ -455,6 +455,14 @@ img {
     object-position: center 65%;
   }
 }
+.restaurant-card__image--position-exception {
+  object-position: center 62%;
+}
+@media screen and (min-width: 1024px) {
+  .restaurant-card__image--position-exception {
+    object-position: center 56%;
+  }
+}
 .restaurant-card__badge {
   position: absolute;
   z-index: 1;
@@ -498,6 +506,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 58%;
 }
 
 .menu {
